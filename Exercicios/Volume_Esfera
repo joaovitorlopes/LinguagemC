@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+float raio, volume;
+scanf("%f",&raio);
+volume = (4.0 * M_PI * pow(raio,3))/3.0;
+printf("%.2fcm³",volume);
+return 0;
+
+}
