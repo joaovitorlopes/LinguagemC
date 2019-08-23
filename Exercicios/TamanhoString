@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+char nome[50];
+scanf("%s",&nome);
+int total=0;
+    while( nome[total] != '\0'){
+        total++;
+  }
+	printf("A string %s, tem tamanho %d\n",nome,total);
+    return 0;
+}
