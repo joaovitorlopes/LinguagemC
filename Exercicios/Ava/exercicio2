@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char frase[50];
+int i = 0, cont = 0;
+scanf("%[^\n]",frase); // ler string até apertar enter
+while(frase[i] != '\0'){
+ if(frase[i] == ' '){
+    cont = cont + 1;
+ }	
+i++;
+}
+printf("A frase possui %d espaços em branco\n",cont);
+return 0;
+}
