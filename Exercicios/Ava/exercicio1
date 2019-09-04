@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+char frase[50];
+int i = 0;
+scanf("%[^\n]",frase); // ler string até apertar enter
+while(frase[i] != '\0'){
+ if(frase[i] != ' '){
+	printf("%c",frase[i]);
+ }	
+i++;
+}
+printf("\n");
+return 0;
+}
