@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+	char str[50];
+	scanf("%s",&str);
+	if(str[0] == 'a' || str[0] == 'A'){
+		printf("%s\n",str);
+	}else{
+		printf("A string %s não é correspondente\n",str);
+	}
+
+	return 0;
+}
