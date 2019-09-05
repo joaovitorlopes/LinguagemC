@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+	int numeros[10], i, result[10];
+	for(i = 0; i < 10; i++){
+    	scanf("%d",&numeros[i]);
+	}
+	for(i = 0; i < 10; i++){
+    	result[i] = pow(numeros[i],2);
+	}
+	for(i = 0; i < 10; i++){
+    	printf("%d = %.2d\n",numeros[i],result[i]);
+	}
+
+	return 0;
+}
