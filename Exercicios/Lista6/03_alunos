@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+int i;
+struct Aluno{
+  char nome[50];
+  int numMa;
+  char curso[50];
+};
+struct Aluno a1[5];
+
+for (i = 0; i < 5; i++) {
+printf("Insira um nome: \n");
+scanf(" %[^\n]",a1[i].nome);
+printf("Insira numero matricula: \n");
+scanf(" %d",&a1[i].numMa);
+printf("Insira o curso: \n");
+scanf(" %[^\n]", a1[i].curso);
+}
+
+for (i = 0; i < 5; i++) {
+  printf("Aluno %s, numero %d, do curso de %s\n",a1[i].nome, a1[i].numMa, a1[i].curso );
+}
+
+    return 0;
+}
