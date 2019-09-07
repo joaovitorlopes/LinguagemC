@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+
+struct Horario{
+  int hora;
+  int minutos;
+  int segundos;
+};
+
+struct Horario h1;
+h1.hora = 19;
+h1.minutos = 10;
+h1.segundos = 0;
+
+printf("Horario(H:mm:ss):\n");
+printf("%.2d:%.2d:%.2d\n",h1.hora, h1.minutos,h1.segundos );
+
+struct Data{
+  int dia;
+  int mes;
+  int ano;
+};
+
+struct Data d1;
+d1.dia = 5;
+d1.mes = 9;
+d1.ano = 2019;
+
+printf("Data(DD:MM:AAAA):\n");
+printf("%.2d/%.2d/%.2d\n",d1.dia, d1.mes,d1.ano);
+
+struct Compromisso{
+  char texto[100];
+  struct Horario ho;
+  struct Data da;
+};
+struct Compromisso c1;
+strcpy(c1.texto, "Viajar");
+c1.ho = h1;
+c1.da = d1;
+printf("Em %.2d/%.2d/%.2d às %.2d:%.2d:%.2d horas eu tenho que %s\n",c1.da.dia, c1.da.mes, c1.da.ano, c1.ho.hora, c1.ho.minutos, c1.ho.segundos,c1.texto);
+    return 0;
+}
