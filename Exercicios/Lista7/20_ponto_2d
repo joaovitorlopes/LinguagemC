@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+struct Ponto{
+  int x;
+  int y;
+};
+
+int verificar(struct Ponto p1, struct Ponto v1, struct Ponto v2){
+ if(p1.x >= v1.x && p1.x <= v2.x && p1.y >= v1.y && p1.y <= v2.y) {
+   printf("Está contido\n");
+   return 1;
+ }else{
+   printf("Não está contido\n");
+   return 0;
+ }
+}
+
+int main(){
+struct Ponto v1; //esquerda inf
+struct Ponto v2; // direita sup
+struct Ponto p1;
+printf("Insira o X do lado Esquerdo Inferior: \n");
+scanf("%d",&v1.x);
+printf("Insira o Y do lado Esquerdo Inferior: \n");
+scanf("%d",&v1.y);
+printf("Insira o X do lado Direito Superior: \n");
+scanf("%d",&v2.x);
+printf("Insira o Y do lado Direito Superior: \n");
+scanf("%d",&v2.y);
+printf("Insira o X: \n");
+scanf("%d",&p1.x);
+printf("Insira o Y: \n");
+scanf("%d",&p1.y);
+verificar(v1,v2,p1);
+  return 0;
+}
