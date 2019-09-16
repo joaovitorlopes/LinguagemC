@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void cres(int n){
+if (n == 0) {
+  printf("%d\n", n);
+}else{
+  cres(n - 1);
+  printf("%d\n", n);
+}
+}
+
+int main(){
+
+int num;
+scanf("%d",&num);
+cres(num);
+  return 0;
+}
