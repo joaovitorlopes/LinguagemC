@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int elemento(int v1[], int i, int me){
+   if (i < 0) {
+      return me;
+   }
+   if (me > v1[i]) {
+     me = v1[i];
+   }
+return elemento(v1, i - 1, me);
+}
+int main(){
+int i;
+int ve[] = {8,5,4};
+printf("%d\n",elemento(ve, 2, ve[2]));
+  return 0;
+}
