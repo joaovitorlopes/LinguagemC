@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+
+int *x; //ponteiro para um inteiro
+int y = 10; // valor de y é 10 em algum endereço
+x = &y; // x ponteiro para inteiro recebe endereço de Y OU X PASSA A APONTAR PARA Y
+*x = 20; // mude o valor da variavel para qual X está apontando
+printf("%d\n", y); // ta imprimindo 20
+printf("%d\n", *x); // também imprimi 20 pois ta apontando pra Y
+//&x seria o endereço onde está o X
+  return 0;
+}
