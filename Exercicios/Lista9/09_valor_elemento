@@ -8,7 +8,7 @@ void imprime(int a[], int size){
 int main() {
  int a[5];
  for (int i = 0; i < 5; i++){
-   scanf("%d",&a[i]);
+   scanf("%d", &*(a+i));
  }
  imprime(a,5);
   return 0;
