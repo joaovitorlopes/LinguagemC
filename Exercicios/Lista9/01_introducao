@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+  01_introducao 
+  int a = 10, *pA;
+  double b = 25.0, *pB;
+  char c = 'C', *pC;
+  pA = &a;
+  pB = &b;
+  pC = &c;
+  printf("A: %d\n", a);
+  printf("B: %.2lf\n", b);
+  printf("C: %c\n", c);
+  printf("---ALTERANDO---\n");
+  *pA = 20;
+  *pB = 30.0;
+  *pC = 'D';
+  printf("A: %d\n", a);
+  printf("B: %.2lf\n", b);
+  printf("C: %c\n", c);
+return 0;
+}
