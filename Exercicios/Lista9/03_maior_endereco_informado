@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+  int a, b;
+  scanf("%d",&a);
+  scanf("%d",&b);
+  int *pA, *pB;
+  pA = &a;
+  pB = &b;
+  if (&a > &b) {
+    printf("O endereço do ponteiro A, %d com o valor %d é maior que Ponteiro B, %d que possui o valor %d\n",&a,*pA,&b,*pB);
+  }else{
+    printf("O endereço do ponteiro B, %d com o valor %d é maior que Ponteiro A, %d que possui o valor %d\n",&b,*pB,&a,*pA);
+  }
+  return 0;
+}
